@@ -1,21 +1,27 @@
-import { useRoutes } from "react-router-dom";
-import { BlogPost } from "../components/BlogPost";
-import { rutas } from "./rutas";
+import { BlogPage } from "../components/BlogPage";
+import { Home } from "../components/Home";
+import { ProfilePage } from "../components/ProfilePage";
 
-export const Routes = () => {
+interface Routes {
+  path: string;
+  element?: JSX.Element;
+  text: string;
+}
 
-  const elements = useRoutes([
-    ...rutas,
-    {
-      path:"/blog/:slug",
-      element: <BlogPost/>
-    },
-    {
-      path: "*",
-      element: <p>don't exist elements</p>,
-    },
-
-  ]);
-
-  return elements;
-};
+export const Routes: Routes[] = [
+  {
+    path: "/",
+    element: <Home />,
+    text: "Home",
+  },
+  {
+    path: "blog",
+    element: <BlogPage />,
+    text: "Blog",
+  },
+  {
+    path: "profile",
+    element: <ProfilePage />,
+    text: "Profile",
+  },
+];

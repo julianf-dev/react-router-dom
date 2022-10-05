@@ -1,14 +1,14 @@
 import { HashRouter } from "react-router-dom";
 import { Menu } from "../components/Menu";
-import { Routes } from "./Routes";
+import { Router } from "../Router/Router";
 
 
-export const Router = () => {
+export const App = () => {
   return (
     <>
       <HashRouter>
         <Menu/>
-        <Routes/>
+        <Router/>
       </HashRouter>
     </>
   );

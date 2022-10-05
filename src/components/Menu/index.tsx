@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { rutas } from "../../Router/rutas";
+import { Routes } from "../../Router/Routes";
 export const Menu = () => {
   return (
     <nav>
       <ul>
-        {rutas.map((route) => (
+        {Routes.map((route) => (
           <li key={route.text}>
             <NavLink
               style={({ isActive }) => ({
