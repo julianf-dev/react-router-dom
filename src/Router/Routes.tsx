@@ -10,18 +10,15 @@ interface Routes {
 
 export const Routes: Routes[] = [
   {
-    path: "/",
-    element: <Home />,
+    path: "home",
     text: "Home",
   },
   {
     path: "blog",
-    element: <BlogPage />,
     text: "Blog",
   },
   {
     path: "profile",
-    element: <ProfilePage />,
     text: "Profile",
   },
 ];
