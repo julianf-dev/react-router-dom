@@ -1,5 +1,5 @@
 import { BlogLink } from "../BlogLink"
-import { data } from "../blogData"
+import { data } from "../BlogLink/blogData"
 
 export const BlogPage = () => {
   return (

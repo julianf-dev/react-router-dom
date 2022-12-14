@@ -1,7 +1,7 @@
 /* Este Array simula una API que contenga nuestros datos, estos
 cargarán dinámicamente el contenido a los fake blogs */
 
-interface blogData {
+export interface blogData {
     id: number,
     title: string,
     slug: string,

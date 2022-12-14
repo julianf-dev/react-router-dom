@@ -6,6 +6,7 @@ export const Router = () => {
 
   const elements = useRoutes([
     ...Routes,
+    // En este caso la ruta dinámica se almacena en "slug" 
     {
       path:"/blog/:slug",
       element: <BlogPost/>
