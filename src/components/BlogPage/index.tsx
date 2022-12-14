@@ -7,7 +7,7 @@ export const BlogPage = () => {
       <h1>Blog Page</h1>
       <ul>
         {data.map((post) => (
-          <BlogLink key={post.id} post={post}/>
+          <BlogLink key={post.slug} post={post}/>
         ))}
       </ul>
     </div>
