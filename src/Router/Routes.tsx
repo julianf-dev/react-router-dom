@@ -21,4 +21,12 @@ export const Routes: Routes[] = [
     path: "profile",
     text: "Profile",
   },
+  {
+    path: "login",
+    text: "Login",
+  },
+  {
+    path: "logout",
+    text: "Logout",
+  },
 ];
